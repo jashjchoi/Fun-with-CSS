@@ -2,29 +2,48 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-ul {
-	display: flex;
-	flex-wrap: wrap;
-	width: 75%;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 65%;
     margin: 4rem auto;
     list-style: none;
-    justify-content: space-around;
-}
-
-li {
-	border: 2px solid black;
-	border-radius: 0.5rem;
-	background-color: #F7F7F7;
+  }
+  li {
+    background-color: #f7f7f7;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
     margin-top: 1rem;
     padding: 1rem;
-    font-weight: bold;
-	font-size: 2rem;
-	text-align: center;
-}
-
-.i-html,
-.i-css,
-.i-js {
-  background: no-repeat url("images/0-sprite.png");
-}
+    text-align: center;
+    height: 425px;
+    width: 250px;
+  }
+  .icon {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .i-html,
+  .i-css,
+  .i-js {
+    background: no-repeat url("images/0-sprite.png");
+    background-size: 40rem;
+  }
+  .i-html {
+    background-position-y: 2rem;
+    background-position-x: 0.3rem;
+  }
+  .i-css {
+    background-position-y: 2rem;
+    background-position-x: -13.4rem;
+  }
+  .i-js {
+    background-position-y: 2rem;
+    background-position-x: -26.8rem;
+  }
