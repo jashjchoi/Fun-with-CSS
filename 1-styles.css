@@ -11,24 +11,24 @@ h2 {
 }
 
 a {
-	text-decoration: none;
-	color: #da2848;
-	position: relative;
+    text-decoration: none;
+    color: #da2848;
+    position: relative;
     font-family:'Times New Roman', Times, serif;
 }
 a::before {
-	content: "";
-	width: 0;
-	height: 3px;
-	bottom: 0;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 0;
     position: absolute;
-	visibility: hidden;
+    visibility: hidden;
     transition: .5s ease-out;
     background-color: #da2848;
 }
 a:hover:before {
-	visibility: visible;
-	width: 100%;
+    visibility: visible;
+    width: 100%;
     color: #da2848;
 }
 a:hover, a:active {
