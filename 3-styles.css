@@ -1,0 +1,114 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px;
+}
+
+input {
+    display: none;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+}
+
+.menu-open-button {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    top: 0px;
+}
+.menu-open-button:hover {
+    width: 70px;
+    height: 70px;
+    transform: scale(1.2); 
+    transition: ease-out 0.3s;
+}
+
+.menu-line-1, .menu-line-2, .menu-line-3 {
+    background-color: #fff;
+    width: 27px;
+    height: 3px;
+    margin: 3px;
+}
+  
+.menu-open:checked + .menu-open-button,
+.menu-item {
+    width: 70px;
+    height: 70px;
+}
+
+.menu-open-button,
+.menu-item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc1c3c;
+    border: 2px solid #ad1833;
+    border-radius: 50% 50%;
+    margin:auto;
+    padding: auto;
+
+}
+
+.menu-item {
+    text-decoration: none;
+    top: 0;
+    font-size: 24px;
+    visibility: hidden;
+    transition: top 0.5s;
+}
+
+i {
+    color: white;
+}
+.menu-item:hover {
+    background-color:  white;
+    
+}
+.menu-item:hover i {
+    color: #cc1c3c;
+}
+
+/* Display X symbol button on click */
+.menu-open:checked ~ .menu-open-button > .menu-line-1 {
+    transform: translateX(2px) translateY(-1px) rotate(45deg);
+    transform-origin: left;
+    margin: 2px auto;
+    transition: 0.3s ease-in;
+}
+.menu-open:checked ~ .menu-open-button > .menu-line-2 {
+    transform: translateX(-2px) translateY(1px) rotate(-45deg);
+    transition: 0.3s ease-out;
+}
+
+.menu-open:checked + .menu-open-button > .menu-line-3 {
+    visibility: hidden;
+}
+
+/* Display menu items below the menu button */
+
+.menu-open:checked ~ .menu-item {
+    visibility: visible;
+}
+.menu-open:checked ~ .menu-item:nth-of-type(1) {
+    top: 90px;
+}
+.menu-open:checked ~ .menu-item:nth-of-type(2) {
+    top: 170px;
+}
+.menu-open:checked ~ .menu-item:nth-of-type(3) {
+    top: 250px;
+}
+.menu-open:checked ~ .menu-item:nth-of-type(4) {
+    top: 330px;
+}
+.menu-open:checked ~ .menu-item:nth-of-type(5) {
+    top: 410px;
+}
