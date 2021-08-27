@@ -34,14 +34,14 @@ li {
     background-size: 640px;
 }
 .i-html {
-    background-position-y: 40px;
     background-position-x: 0px;
+    background-position-y: 40px;
 }
 .i-css {
-    background-position-y: 40px;
     background-position-x: -220px;
+    background-position-y: 40px;
 }
 .i-js {
-    background-position-y: 40px;
     background-position-x: -430px;
+    background-position-y: 40px;
 }
