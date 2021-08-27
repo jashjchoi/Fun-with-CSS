@@ -70,6 +70,7 @@ i {
 }
 .menu-item:hover {
     background-color:  white;
+    transition: all 0.1s;
     
 }
 .menu-item:hover i {
