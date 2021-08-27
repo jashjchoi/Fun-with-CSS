@@ -2,48 +2,46 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
-  ul {
+}
+ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
-    margin: 4rem auto;
+    margin: 40px auto;
     list-style: none;
-  }
-  li {
-    height: 425px;
+}
+li {
     width: 250px;
+    height: 425px;
     background-color: #f7f7f7;
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 40px;
+    padding: 20px;
     border: 1.8px solid black;
-    border-radius: .4rem;
-    font-size: 2rem;
+    border-radius: 8px;
+    font-size: 28px;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
     text-align: center;
-  }
-  .icon {
+}
+.icon {
     display: block;
     height: 100%;
     width: 100%;
-  }
-  .i-html,
-  .i-css,
-  .i-js {
+}
+.i-html, .i-css, .i-js {
     background: no-repeat url("images/0-sprite.png");
-    background-size: 40rem;
-  }
-  .i-html {
-    background-position-y: 2rem;
-    background-position-x: 0.3rem;
-  }
-  .i-css {
-    background-position-y: 2rem;
-    background-position-x: -13.4rem;
-  }
-  .i-js {
-    background-position-y: 2rem;
-    background-position-x: -26.8rem;
-  }
+    background-size: 640px;
+}
+.i-html {
+    background-position-y: 40px;
+    background-position-x: 0px;
+}
+.i-css {
+    background-position-y: 40px;
+    background-position-x: -220px;
+}
+.i-js {
+    background-position-y: 40px;
+    background-position-x: -430px;
+}
