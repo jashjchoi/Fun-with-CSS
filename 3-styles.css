@@ -13,7 +13,7 @@ input {
     align-items: center;
     justify-content: center;
     width: 40px;
-}
+    }
 
 .menu-open-button {
     display: flex;
@@ -35,7 +35,7 @@ input {
     width: 27px;
     height: 3px;
     margin: 3px;
-}
+    }
   
 .menu-open:checked + .menu-open-button, .menu-item {
     width: 70px;
@@ -45,7 +45,7 @@ input {
 .menu-open-button, .menu-item {
     position: absolute;
     display: flex;
-   align-items: center;
+    align-items: center;
     justify-content: center;
     margin:auto;
     padding: auto;
@@ -70,7 +70,6 @@ i {
 .menu-item:hover {
     background-color:  white;
     transition: all 0.2s;
-    
 }
 .menu-item:hover i {
     color: #cc1c3c;
@@ -93,7 +92,6 @@ i {
 }
 
 /* Display menu items below the menu button */
-
 .menu-open:checked ~ .menu-item {
     visibility: visible;
 }

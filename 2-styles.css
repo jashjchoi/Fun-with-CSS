@@ -9,15 +9,15 @@ body {
 }
 /* Hide default HTML checkbox */
 input {
-	width: 0;
-	height: 0;
+    width: 0;
+    height: 0;
     opacity: 0;
 }
 .toggle {
     position: relative;
     display: inline-block;
     width: 100px;
-	height: 35px;
+    height: 35px;
 }
 .toggle-switch {
     position: absolute;
@@ -29,10 +29,10 @@ input {
     background-color: rgb(231, 231, 231);
     -webkit-transition: .4s;
     transition: .4s;
-	border-radius: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .toggle-switch:before {
@@ -46,33 +46,33 @@ input {
     border: 2px solid rgb(180, 180, 180);
     -webkit-transition: 0.3s;
     transition: all 0.3s;
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 
 input:checked+label>.toggle-switch {
-	background-color: #E1033C;
-	color: white;
+    background-color: #E1033C;
+    color: white;
     border-radius: 34px;
     border: 2px solid rgb(180, 180, 180);
     left: 2px;
 }
 
 input+label>.toggle-switch {
-	color: #C3C3C3;
+    color: #C3C3C3;
     border: 2px solid rgb(180, 180, 180);
 }
 
 
 input:checked+label>.toggle-switch:before {
     -webkit-transform: translateX(60px);
-	-ms-transform: translateX(60px);
-	transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    transform: translateX(60px);
 }
 
 
 input:checked+label>.toggle-switch:after {
-	content: "Yes";
+    content: "Yes";
     font-size: 18px;
     padding-right:70px;
     font-weight: 600; 
@@ -80,7 +80,7 @@ input:checked+label>.toggle-switch:after {
 
 
 input+label>.toggle-switch:after {
-	content: "No";
+    content: "No";
     font-size: 18px;
     font-weight: 600;
     padding-left:40px;
